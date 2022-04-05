@@ -806,17 +806,17 @@ ul {
 
 /* Страница Портфолио */
 /* Фильтр*/
-.filters {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filters .item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.items-btn {
+.filter__button {
   display: inline-block;
   padding: 6px 22px;
   min-width: 73px;
@@ -836,8 +836,8 @@ ul {
     box-shadow 250ms var(--cubic);
 }
 
-.items-btn:hover,
-.items-btn:focus {
+.filter__button:hover,
+.filter__button:focus {
   color: var(--primary-white-color);
   background-color: var(--bgc-btn);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -851,31 +851,31 @@ ul {
   flex-wrap: wrap;
 }
 
-.portfolio-item {
+.portfolio__item {
   width: 370px;
   margin-right: 30px;
 }
 
-.portfolio-item:nth-child(3n) {
+.portfolio__item:nth-child(3n) {
   margin-right: 0;
 }
-.portfolio-link {
+.portfolio__link {
   display: block;
   transition: box-shadow 250ms var(--cubic);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.picture {
+.portfolio__picture {
   display: block;
   width: 100%;
 }
 
-.headline {
+.portfolio__subtitle {
   margin-bottom: 4px;
 
   color: var(--secondary-color);
@@ -885,7 +885,7 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.list-block {
+.portfolio__type {
   margin-bottom: 0;
 
   color: var(--primary-text-color);
@@ -893,26 +893,26 @@ ul {
   line-height: 1.87;
 }
 
-.portfolio-item {
+.portfolio__item {
   margin-bottom: 30px;
 }
 
-.portfolio-item:nth-last-child(-n + 3) {
+.portfolio__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
 
-.portfolio-part {
+.portfolio__part {
   padding: 20px 24px;
   border-left: 1px solid var(--portfolio-card-border);
   border-right: 1px solid var(--portfolio-card-border);
   border-bottom: 1px solid var(--portfolio-card-border);
 }
 
-.product-thumb {
+.portfolio__thumb {
   position: relative;
   overflow: hidden;
 }
-.portfolio-description {
+.portfolio__description {
   display: inline-block;
   content: '';
 
@@ -927,12 +927,12 @@ ul {
   transform: translateY(100%);
   transition: background-color 250ms var(--cubic), transform 250ms var(--cubic);
 }
-.portfolio-link:hover .portfolio-description,
-.portfolio-link:focus .portfolio-description {
+.portfolio__link:hover .portfolio__description,
+.portfolio__link:focus .portfolio__description {
   transform: translateY(0);
 }
 
-.portfolio-thumb {
+.portfolio__text {
   position: absolute;
   top: 63px;
   left: 24px;
