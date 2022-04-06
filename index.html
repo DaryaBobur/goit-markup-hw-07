@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   
   <body>
@@ -25,14 +25,14 @@
           ><span class="logo__accent">Web</span
           ><span class="logo__name">Studio</span></a>
 
-        <ul class="site-nav list">
+        <ul class="site-nav">
           <li class="site-nav__item"><a class="site-nav__link site-nav__link--current" href="./index.html">Студия</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
           <li class="site-nav__item"><a class="site-nav__link" href="">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="contacts list">
+      <ul class="contacts">
         <li class="contacts__item">
           <a class="contacts__link"
           href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12">
@@ -61,7 +61,7 @@
       <!--Наши особенности-->
       <section class="features section">
         <div class="features__container container">
-        <ul class="features__list list">
+        <ul class="features__list">
           <li class="features__item">
             <div class="features__wrapper">
             <svg width="70" height="70">
@@ -118,10 +118,10 @@
         </div>
       </section>
       <!--Наша сфера деятельности-->
-      <section class="works section">
+      <section class="section section--works">
       <div class="works__container container">
-        <h2 class="works__subtitle">Чем мы занимаемся</h2>
-        <ul class="works__list list">
+        <h2 class="works__title">Чем мы занимаемся</h2>
+        <ul class="works__list">
           <li class="works__item">
             <img class="works__images"
               src="./images/computer.jpg"
@@ -130,7 +130,7 @@
               height="294"
             />
             <div class="works__description">
-            <p class="works__text">Десктопные приложения</p>
+            <p class="works__subtitle">Десктопные приложения</p>
             </div>
           </li>
           <li class="works__item">
@@ -141,7 +141,7 @@
               height="294"
             />
             <div class="works__description">
-            <p class="works__text">Мобильные приложения</p>
+            <p class="works__subtitle">Мобильные приложения</p>
             </div>
           </li>
           <li class="works__item">
@@ -152,7 +152,7 @@
               height="294"
             />
             <div class="works__description">
-            <p class="works__text">Дизайнерские решения</p>
+            <p class="works__subtitle">Дизайнерские решения</p>
             </div>
           </li>
         </ul>
@@ -161,8 +161,8 @@
       <!--Наша команда-->
       <section class="team section">
         <div class="team__container container">
-        <h2 class="team__subtitle">Наша команда</h2>
-        <ul class="team__members list">
+        <h2 class="team__title">Наша команда</h2>
+        <ul class="team__members">
           <li class="team__item">
             <img class="team__photo"
               src="./images/ihor.jpg"
@@ -174,7 +174,7 @@
             <h3 class="team__name">Игорь Демьяненко</h3>
             <p class="team__text">Product Designer</p>
             
-            <ul class="team__socials list">
+            <ul class="team__socials">
               <li class="team__socials-item"><a class="team__socials-link" href=""><svg class="team__socials-icon" width="20" height="20">
               <use href="./images/icons.svg#instagram"></use>
             </svg></a></li>
@@ -279,8 +279,8 @@
       </section>
       <section class="clients section">
         <div class="clients__container container">
-        <h2 class="clients__subtitle">Постоянные клиенты</h2>
-        <ul class="clients__list list">
+        <h2 class="clients__title">Постоянные клиенты</h2>
+        <ul class="clients__list">
           <li class="clients__item"><a class="clients__link" href=""><svg class="clients__logo" width="106" height="60">
               <use href="./images/icons.svg#company-1"></use>
             </svg></a></li>
@@ -308,13 +308,13 @@
     <footer class="footer">
       <div class="footer__container container">
       <div>
-      <a class="logo logo--more" href="./index.html"
+      <a class="logo logo--footer" href="./index.html"
         ><span class="logo__accent">Web</span
-        ><span class="logo__label">Studio</span></a>
+        ><span class="logo__name logo__name--footer">Studio</span></a>
 
       <address class="footer-contacts">
         <p class="footer-contacts__address">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="footer-contacts__list list">
+        <ul class="footer-contacts__list">
           <li class="footer-contacts__item">
             <a class="footer-contacts__link" href="mailto:info@example.com"
               >info@example.com</a>
@@ -328,8 +328,8 @@
     </div>
     <!-- Соцсети в футере -->
     <div class="footer-socials">
-      <h3 class="footer-socials__subtitle more">Присоединяйтесь</h3>
-      <ul class="footer-socials__list list">
+      <h3 class="footer-socials__subtitle">Присоединяйтесь</h3>
+      <ul class="footer-socials__list">
         <li class="footer-socials__item"><a class="footer-socials__link" href=""><svg class="footer-socials__icon" width="20" height="20">
               <use href="./images/icons.svg#instagram"></use>
             </svg></a></li>
@@ -361,11 +361,10 @@
 <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="modal__button"><svg class="icon-close" width="18" height="18"> 
+        <button data-modal-close type="button" class="modal__button"><svg width="18" height="18"> 
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
-
       <h2 class="modal__title">Оставьте свои данные, мы вам перезвоним</h2>
       <form class="form">
         <p class="form__field">
