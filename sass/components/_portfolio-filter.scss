@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-}
 
-.filter__item:not(:last-child) {
+    &__item:not(:last-child) {
     margin-right: 8px;
+}
 }
 
 .filter__button {
@@ -26,12 +26,13 @@
     cursor: pointer;
 
     transition: background-color 250ms $cubic, color 250ms $cubic,
-        box-shadow 250ms $cubic;
+    box-shadow 250ms $cubic;
 
-&:hover,
-&:focus {
-color: $primary-white-color;
-background-color: $bgc-btn;
-box-shadow: $box-shadow-filter;
+
+    &:hover,
+    &:focus {
+    color: $primary-white-color;
+    background-color: $bgc-btn;
+    box-shadow: $box-shadow-filter;
 }
 }

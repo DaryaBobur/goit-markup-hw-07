@@ -18,13 +18,11 @@
 
 .logo__name {
     color: $logo-color;
-}
 
-.logo__name {
-&:hover,
-&:focus {
-color: $accent-color;
-}   
+    &:hover,
+    &:focus {
+    color: $accent-color;
+}
 }
 
 .logo {

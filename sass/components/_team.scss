@@ -50,7 +50,6 @@
 
 .team__socials {
     @extend %list;
-
     @extend %flex;
 }
 
@@ -68,8 +67,8 @@
 
     transition: color 250ms $cubic, background-color 250ms $cubic;
 
-&:hover,
-&:focus {
+    &:hover,
+    &:focus {
     color: $primary-white-color;
     background-color: $accent-color;
 }

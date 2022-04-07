@@ -1,4 +1,4 @@
-.section--works {
+.works {
     padding-top: 0;
     padding-bottom: 94px;
 }
@@ -39,7 +39,7 @@
 }
 
 .works__subtitle {
-@extend %subtitle;
+    @extend %subtitle;
 
     position: absolute;
     bottom: 27px;

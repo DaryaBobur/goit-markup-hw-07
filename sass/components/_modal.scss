@@ -32,10 +32,10 @@
 .form__input {
     @extend %form-modal;
 
-&:focus {
+    &:focus {
     border-color: $accent-color;
 }
-&:focus~.form__icon {
+    &:focus~.form__icon {
     fill: $accent-color;
 }
 }
@@ -76,8 +76,6 @@
     transition: fill 250ms $cubic;
 }
 
-
-
 .form__label {
     margin-bottom: 4px;
     font-size: 12px;
@@ -85,15 +83,13 @@
     letter-spacing: 0.01em;
 }
 
-
-
 .form__link-contract {
     color: $accent-color;
     margin-left: 4px;
 }
 
 /* Оформление чекбокса */
-.checkbox {
+.form__input-checkbox {
     width: 1px;
     height: 1px;
     margin: -1px;
@@ -112,11 +108,13 @@
     border-radius: 2px;
     transition: background-color 250ms $cubic;
 }
+
 .form__checkbox {
     margin-bottom: 30px;
     font-size: 14px;
     line-height: 1.71;
 }
+
 .form__label-checkbox {
     position: relative;
     
@@ -131,12 +129,13 @@
     visibility: hidden;
 }
 
-.checkbox:checked+.form__checkbox-bgc {
+.form__input-checkbox:checked+.form__checkbox-bgc {
     border-color: $accent-color;
     background-color: $accent-color;
     border-radius: 2px;
+
+    &:checked~.form__icon-checkbox {
+        visibility: visible;
+    }
 }
 
-.checkbox:checked~.form__icon-checkbox {
-    visibility: visible;
-}
