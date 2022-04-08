@@ -134,8 +134,7 @@
     background-color: $accent-color;
     border-radius: 2px;
 
-    &:checked~.form__icon-checkbox {
-        visibility: visible;
-    }
 }
-
+.form__input-checkbox:checked~.form__icon-checkbox {
+    visibility: visible;
+}
